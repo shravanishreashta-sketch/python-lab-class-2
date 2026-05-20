@@ -1,0 +1,137 @@
+#%%
+#check if the number is positive
+num=int(input("enter the number"))
+if num>0:
+    print("the no is positive")
+#%%
+ # check if a charachter is vowel
+ch=(input("enter the charachter"))
+if (ch=="a","e","i","o","u"):
+     print("the charachter is vowel")
+#%%
+#check a number is divisible by 5
+num=int(input("enter the number"))
+if num%5==0:
+    print("the no is divisible by 5")
+#%%
+#check if a number is even or odd
+num=int(input("enter the number"))
+if num%2==0:
+    print("the no is even")
+else:
+    print("the no is odd")
+
+
+#%%
+#find largest of 2 nos
+a=int(input("enter the number a: "))
+b=int(input("enter the number b: "))
+if a>b:
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+#%%
+#break statement program
+for i in range(1,10):
+    if i==7:
+        break
+    print(i)
+
+
+
+#%%
+#search for element
+arr=[1,2,3,4,5,6]
+key=int(input("enter the element to search"))
+for i in range(len(arr)):
+    if arr[i]==key:
+        print("found at index and position : ",i,i+1)
+        break
+#%%
+#search for element using if
+arr=[1,2,3,4,5,6]
+x=int(input("enter the element to search"))
+if x in arr:
+    print("found at index and position : ",arr.index(x),x)
+else:
+    printf("element not found")
+#%%
+marks=int(input("enter the marks"))
+if marks>=90:
+    print("grade A")
+elif marks>=80:
+        print("grade B")
+elif marks>=70:
+        print("grade C")
+elif marks>=60:
+            print("grade D")
+else:
+            print("fail")
+
+#%%
+for i in range(1,11):
+    print(i)
+#%%
+#no is positive or negative or zero
+num=int(input("enter the number"))
+if num==0:
+    print("the number is zero")
+elif num>1:
+    print("the number is positive")
+else:
+    print("the number is negative")
+
+#%%
+#find the largest of three numbers
+a=int(input("enter the number"))
+b=int(input("enter the number"))
+c=int(input("enter the number"))
+if a>b and a>c:
+    print("a is greater")
+elif b>a and b>c:
+    print("b is greater")
+else:
+    print("c is greater")
+#%%
+#multiplication table
+a=int(input("enter the number"))
+for i in range (1,11):
+    print (a,"x",i," = ",a*i)
+#%%
+# factorial
+num=int(input("enter the number"))
+fact=1
+for i in range(1,num+1):
+    fact=fact*i
+    print("factorial number= ",fact)
+#%%
+#sum of first n natural numbers
+num=int(input("enter the number"))
+sum = 0
+i=1
+while i<=num:
+    sum=sum+i
+    i=i+1
+print("sum of first", num ,"natural numbers is :",sum)
+#%%
+#reverse a number
+num=int(input("enter the number"))
+reverse=0
+while num>0:
+    digit=num%10
+    reverse=reverse*10+digit
+    num=num//10
+print("reverse number is :",reverse)
+
+
+#%%
+#count the digits of the number
+num=int(input("enter the number"))
+count =0
+while num!=0:
+    num=num//10
+    count=count+1
+print("number of digits :",count)
+
+#%%
+
